@@ -1,0 +1,1897 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' inline='true' name='federated.0kkh4zx02s4rir15tut030tb8bfz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='textscan.02expnf0ewqwqa1ckjd920bx2m9b'>
+            <connection class='textscan' directory='C:/Users/graff/Desktop/ga_bootcamp/capstone' filename='Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.02expnf0ewqwqa1ckjd920bx2m9b' name='Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv' table='[Lobbyist_Compensation_and_Expenses_by_Source_20240122#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='integer' name='report_number' ordinal='1' />
+            <column datatype='string' name='origin' ordinal='2' />
+            <column datatype='integer' name='filer_id' ordinal='3' />
+            <column datatype='string' name='filer_name' ordinal='4' />
+            <column datatype='string' name='type' ordinal='5' />
+            <column datatype='integer' name='funding_source_id' ordinal='6' />
+            <column datatype='string' name='funding_source_name' ordinal='7' />
+            <column datatype='string' name='filing_period' ordinal='8' />
+            <column datatype='date' name='receipt_date' ordinal='9' />
+            <column datatype='integer' name='employer_id' ordinal='10' />
+            <column datatype='string' name='employer_name' ordinal='11' />
+            <column datatype='real' name='compensation' ordinal='12' />
+            <column datatype='real' name='sub_lobbyist_compensation' ordinal='13' />
+            <column datatype='real' name='net_compensation' ordinal='14' />
+            <column datatype='real' name='personal_expenses' ordinal='15' />
+            <column datatype='real' name='entertainment' ordinal='16' />
+            <column datatype='real' name='contributions' ordinal='17' />
+            <column datatype='real' name='advertising' ordinal='18' />
+            <column datatype='real' name='political_ads' ordinal='19' />
+            <column datatype='real' name='other' ordinal='20' />
+            <column datatype='real' name='total_expenses' ordinal='21' />
+            <column datatype='real' name='net_total' ordinal='22' />
+            <column datatype='integer' name='employment_registration_id' ordinal='23' />
+            <column datatype='string' name='employment_type' ordinal='24' />
+            <column datatype='integer' name='contractor_id' ordinal='25' />
+            <column datatype='string' name='contractor_name' ordinal='26' />
+            <column datatype='string' name='url' ordinal='27' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.02expnf0ewqwqa1ckjd920bx2m9b' name='Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv' table='[Lobbyist_Compensation_and_Expenses_by_Source_20240122#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='integer' name='report_number' ordinal='1' />
+            <column datatype='string' name='origin' ordinal='2' />
+            <column datatype='integer' name='filer_id' ordinal='3' />
+            <column datatype='string' name='filer_name' ordinal='4' />
+            <column datatype='string' name='type' ordinal='5' />
+            <column datatype='integer' name='funding_source_id' ordinal='6' />
+            <column datatype='string' name='funding_source_name' ordinal='7' />
+            <column datatype='string' name='filing_period' ordinal='8' />
+            <column datatype='date' name='receipt_date' ordinal='9' />
+            <column datatype='integer' name='employer_id' ordinal='10' />
+            <column datatype='string' name='employer_name' ordinal='11' />
+            <column datatype='real' name='compensation' ordinal='12' />
+            <column datatype='real' name='sub_lobbyist_compensation' ordinal='13' />
+            <column datatype='real' name='net_compensation' ordinal='14' />
+            <column datatype='real' name='personal_expenses' ordinal='15' />
+            <column datatype='real' name='entertainment' ordinal='16' />
+            <column datatype='real' name='contributions' ordinal='17' />
+            <column datatype='real' name='advertising' ordinal='18' />
+            <column datatype='real' name='political_ads' ordinal='19' />
+            <column datatype='real' name='other' ordinal='20' />
+            <column datatype='real' name='total_expenses' ordinal='21' />
+            <column datatype='real' name='net_total' ordinal='22' />
+            <column datatype='integer' name='employment_registration_id' ordinal='23' />
+            <column datatype='string' name='employment_type' ordinal='24' />
+            <column datatype='integer' name='contractor_id' ordinal='25' />
+            <column datatype='string' name='contractor_name' ordinal='26' />
+            <column datatype='string' name='url' ordinal='27' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>report_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[report_number]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>report_number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[origin]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>origin</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[filer_id]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>filer_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filer_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[filer_name]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>filer_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funding_source_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[funding_source_id]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>funding_source_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funding_source_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[funding_source_name]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>funding_source_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filing_period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[filing_period]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>filing_period</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>receipt_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[receipt_date]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>receipt_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[employer_id]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>employer_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employer_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employer_name]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>employer_name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>compensation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[compensation]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>compensation</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_lobbyist_compensation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sub_lobbyist_compensation]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>sub_lobbyist_compensation</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_compensation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_compensation]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>net_compensation</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>personal_expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[personal_expenses]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>personal_expenses</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>entertainment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[entertainment]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>entertainment</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[contributions]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>contributions</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>advertising</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[advertising]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>advertising</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>political_ads</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[political_ads]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>political_ads</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[other]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>other</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_expenses]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>total_expenses</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_total]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>net_total</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employment_registration_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[employment_registration_id]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>employment_registration_id</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employment_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employment_type]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>employment_type</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contractor_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contractor_id]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>contractor_id</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contractor_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contractor_name]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>contractor_name</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv' datatype='table' name='[__tableau_internal_object_id__].[Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E]' role='measure' type='quantitative' />
+      <column caption='Advertising' datatype='real' name='[advertising]' role='measure' type='quantitative' />
+      <column caption='Compensation' datatype='real' name='[compensation]' role='measure' type='quantitative' />
+      <column caption='Contractor Id' datatype='integer' name='[contractor_id]' role='dimension' type='ordinal' />
+      <column caption='Contractor Name' datatype='string' name='[contractor_name]' role='dimension' type='nominal' />
+      <column caption='Contributions' datatype='real' name='[contributions]' role='measure' type='quantitative' />
+      <column caption='Employer Id' datatype='integer' name='[employer_id]' role='dimension' type='ordinal' />
+      <column caption='Employer Name' datatype='string' name='[employer_name]' role='dimension' type='nominal' />
+      <column caption='Employment Registration Id' datatype='integer' name='[employment_registration_id]' role='dimension' type='ordinal' />
+      <column caption='Employment Type' datatype='string' name='[employment_type]' role='dimension' type='nominal' />
+      <column caption='Entertainment' datatype='real' name='[entertainment]' role='measure' type='quantitative' />
+      <column caption='Filer Id' datatype='integer' name='[filer_id]' role='dimension' type='ordinal' />
+      <column caption='Filer Name' datatype='string' name='[filer_name]' role='dimension' type='nominal' />
+      <column caption='Filing Period' datatype='string' name='[filing_period]' role='dimension' type='nominal' />
+      <column caption='Funding Source Id' datatype='integer' name='[funding_source_id]' role='dimension' type='ordinal' />
+      <column caption='Funding Source Name' datatype='string' name='[funding_source_name]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Net Compensation' datatype='real' name='[net_compensation]' role='measure' type='quantitative' />
+      <column caption='Net Total' datatype='real' name='[net_total]' role='measure' type='quantitative' />
+      <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+      <column caption='Other' datatype='real' name='[other]' role='measure' type='quantitative' />
+      <column caption='Personal Expenses' datatype='real' name='[personal_expenses]' role='measure' type='quantitative' />
+      <column caption='Political Ads' datatype='real' name='[political_ads]' role='measure' type='quantitative' />
+      <column caption='Receipt Date' datatype='date' name='[receipt_date]' role='dimension' type='ordinal' />
+      <column caption='Report Number' datatype='integer' name='[report_number]' role='dimension' type='ordinal' />
+      <column caption='Sub Lobbyist Compensation' datatype='real' name='[sub_lobbyist_compensation]' role='measure' type='quantitative' />
+      <column caption='Total Expenses' datatype='real' name='[total_expenses]' role='measure' type='quantitative' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column-instance column='[advertising]' derivation='Sum' name='[sum:advertising:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[contributions]' derivation='Sum' name='[sum:contributions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[entertainment]' derivation='Sum' name='[sum:entertainment:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[net_compensation]' derivation='Sum' name='[sum:net_compensation:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[other]' derivation='Sum' name='[sum:other:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[personal_expenses]' derivation='Sum' name='[sum:personal_expenses:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[political_ads]' derivation='Sum' name='[sum:political_ads:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:advertising:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:net_compensation:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:personal_expenses:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:political_ads:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:other:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:entertainment:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:contributions:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv' id='Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv_5BF0F9F89DCF49E092906B58033C376E'>
+            <properties context=''>
+              <relation connection='textscan.02expnf0ewqwqa1ckjd920bx2m9b' name='Lobbyist_Compensation_and_Expenses_by_Source_20240122.csv' table='[Lobbyist_Compensation_and_Expenses_by_Source_20240122#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='id' ordinal='0' />
+                  <column datatype='integer' name='report_number' ordinal='1' />
+                  <column datatype='string' name='origin' ordinal='2' />
+                  <column datatype='integer' name='filer_id' ordinal='3' />
+                  <column datatype='string' name='filer_name' ordinal='4' />
+                  <column datatype='string' name='type' ordinal='5' />
+                  <column datatype='integer' name='funding_source_id' ordinal='6' />
+                  <column datatype='string' name='funding_source_name' ordinal='7' />
+                  <column datatype='string' name='filing_period' ordinal='8' />
+                  <column datatype='date' name='receipt_date' ordinal='9' />
+                  <column datatype='integer' name='employer_id' ordinal='10' />
+                  <column datatype='string' name='employer_name' ordinal='11' />
+                  <column datatype='real' name='compensation' ordinal='12' />
+                  <column datatype='real' name='sub_lobbyist_compensation' ordinal='13' />
+                  <column datatype='real' name='net_compensation' ordinal='14' />
+                  <column datatype='real' name='personal_expenses' ordinal='15' />
+                  <column datatype='real' name='entertainment' ordinal='16' />
+                  <column datatype='real' name='contributions' ordinal='17' />
+                  <column datatype='real' name='advertising' ordinal='18' />
+                  <column datatype='real' name='political_ads' ordinal='19' />
+                  <column datatype='real' name='other' ordinal='20' />
+                  <column datatype='real' name='total_expenses' ordinal='21' />
+                  <column datatype='real' name='net_total' ordinal='22' />
+                  <column datatype='integer' name='employment_registration_id' ordinal='23' />
+                  <column datatype='string' name='employment_type' ordinal='24' />
+                  <column datatype='integer' name='contractor_id' ordinal='25' />
+                  <column datatype='string' name='contractor_name' ordinal='26' />
+                  <column datatype='string' name='url' ordinal='27' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Advertising Spend by Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='federated.0kkh4zx02s4rir15tut030tb8bfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kkh4zx02s4rir15tut030tb8bfz'>
+            <column caption='Advertising' datatype='real' name='[advertising]' role='measure' type='quantitative' />
+            <column caption='Receipt Date' datatype='date' name='[receipt_date]' role='dimension' type='ordinal' />
+            <column-instance column='[advertising]' derivation='Sum' name='[sum:advertising:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[receipt_date]' derivation='Year' name='[yr:receipt_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:receipt_date:ok]' />
+              <groupfilter function='member' level='[yr:receipt_date:ok]' member='2014' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='206' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:advertising:qk]</rows>
+        <cols>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</cols>
+      </table>
+      <simple-id uuid='{4FE5496B-97C3-4826-92A5-B7406D74DADA}' />
+    </worksheet>
+    <worksheet name='Contractor Expenses by Category by Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='federated.0kkh4zx02s4rir15tut030tb8bfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kkh4zx02s4rir15tut030tb8bfz'>
+            <column caption='Advertising' datatype='real' name='[advertising]' role='measure' type='quantitative' />
+            <column caption='Contributions' datatype='real' name='[contributions]' role='measure' type='quantitative' />
+            <column caption='Entertainment' datatype='real' name='[entertainment]' role='measure' type='quantitative' />
+            <column caption='Other' datatype='real' name='[other]' role='measure' type='quantitative' />
+            <column caption='Personal Expenses' datatype='real' name='[personal_expenses]' role='measure' type='quantitative' />
+            <column caption='Political Ads' datatype='real' name='[political_ads]' role='measure' type='quantitative' />
+            <column caption='Receipt Date' datatype='date' name='[receipt_date]' role='dimension' type='ordinal' />
+            <column-instance column='[advertising]' derivation='Sum' name='[sum:advertising:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[contributions]' derivation='Sum' name='[sum:contributions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[entertainment]' derivation='Sum' name='[sum:entertainment:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[other]' derivation='Sum' name='[sum:other:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[personal_expenses]' derivation='Sum' name='[sum:personal_expenses:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[political_ads]' derivation='Sum' name='[sum:political_ads:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[receipt_date]' derivation='Year' name='[yr:receipt_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:advertising:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:contributions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:entertainment:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:other:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:personal_expenses:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:political_ads:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:receipt_date:ok]' />
+              <groupfilter function='member' level='[yr:receipt_date:ok]' member='2014' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kkh4zx02s4rir15tut030tb8bfz].[:Measure Names]</column>
+            <column>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[:Measure Names]' />
+              <text column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[:Measure Names]' />
+              <text column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0kkh4zx02s4rir15tut030tb8bfz].[:Measure Names]</run>
+                <run>&gt;&#10;$&lt;</run>
+                <run>[federated.0kkh4zx02s4rir15tut030tb8bfz].[Multiple Values]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='198' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kkh4zx02s4rir15tut030tb8bfz].[Multiple Values]</rows>
+        <cols>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</cols>
+      </table>
+      <simple-id uuid='{CBA1DD71-BDDB-4EB5-B5E3-6C33ADF033CB}' />
+    </worksheet>
+    <worksheet name='Contributions by Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='federated.0kkh4zx02s4rir15tut030tb8bfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kkh4zx02s4rir15tut030tb8bfz'>
+            <column caption='Contributions' datatype='real' name='[contributions]' role='measure' type='quantitative' />
+            <column caption='Receipt Date' datatype='date' name='[receipt_date]' role='dimension' type='ordinal' />
+            <column-instance column='[contributions]' derivation='Sum' name='[sum:contributions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[receipt_date]' derivation='Year' name='[yr:receipt_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:receipt_date:ok]' />
+              <groupfilter function='member' level='[yr:receipt_date:ok]' member='2014' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='208' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:contributions:qk]</rows>
+        <cols>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</cols>
+      </table>
+      <simple-id uuid='{868AEB70-A0AD-494B-A8A1-FDCC8C49D55E}' />
+    </worksheet>
+    <worksheet name='Direct vs. Subcontract'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='federated.0kkh4zx02s4rir15tut030tb8bfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kkh4zx02s4rir15tut030tb8bfz'>
+            <column caption='Compensation' datatype='real' name='[compensation]' role='measure' type='quantitative' />
+            <column caption='Employment Type' datatype='string' name='[employment_type]' role='dimension' type='nominal' />
+            <column-instance column='[employment_type]' derivation='None' name='[none:employment_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[compensation]' derivation='Sum' name='[sum:compensation:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employment_type:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:employment_type:nk]' />
+              <groupfilter function='member' level='[none:employment_type:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employment_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='201' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:compensation:qk]</rows>
+        <cols>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employment_type:nk]</cols>
+      </table>
+      <simple-id uuid='{A29165BF-094A-4ABE-83C9-DC00CEBE12E1}' />
+    </worksheet>
+    <worksheet name='Political Ad Spend by Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='federated.0kkh4zx02s4rir15tut030tb8bfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kkh4zx02s4rir15tut030tb8bfz'>
+            <column caption='Political Ads' datatype='real' name='[political_ads]' role='measure' type='quantitative' />
+            <column caption='Receipt Date' datatype='date' name='[receipt_date]' role='dimension' type='ordinal' />
+            <column-instance column='[political_ads]' derivation='Sum' name='[sum:political_ads:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[receipt_date]' derivation='Year' name='[yr:receipt_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='206' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:political_ads:qk]</rows>
+        <cols>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</cols>
+      </table>
+      <simple-id uuid='{F0888932-8590-4F6F-A9E3-22EEF472AF4A}' />
+    </worksheet>
+    <worksheet name='Total Compensation by Contractor'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='federated.0kkh4zx02s4rir15tut030tb8bfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kkh4zx02s4rir15tut030tb8bfz'>
+            <column caption='Contractor Name' datatype='string' name='[contractor_name]' role='dimension' type='nominal' />
+            <column caption='Net Compensation' datatype='real' name='[net_compensation]' role='measure' type='quantitative' />
+            <column-instance column='[contractor_name]' derivation='None' name='[none:contractor_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[net_compensation]' derivation='Sum' name='[sum:net_compensation:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:contractor_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([net_compensation])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:contractor_name:nk]' />
+                  <groupfilter function='member' level='[none:contractor_name:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:contractor_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:net_compensation:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:contractor_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='208' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:net_compensation:qk]</rows>
+        <cols>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:contractor_name:nk]</cols>
+      </table>
+      <simple-id uuid='{D40C945D-A988-4B57-93C5-4845FCA0B3EB}' />
+    </worksheet>
+    <worksheet name='Total Compensation by Employer'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='federated.0kkh4zx02s4rir15tut030tb8bfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kkh4zx02s4rir15tut030tb8bfz'>
+            <column caption='Compensation' datatype='real' name='[compensation]' role='measure' type='quantitative' />
+            <column caption='Employer Name' datatype='string' name='[employer_name]' role='dimension' type='nominal' />
+            <column-instance column='[employer_name]' derivation='None' name='[none:employer_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[compensation]' derivation='Sum' name='[sum:compensation:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employer_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([compensation])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:employer_name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employer_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:compensation:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employer_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='206' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:compensation:qk]</rows>
+        <cols>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employer_name:nk]</cols>
+      </table>
+      <simple-id uuid='{12ACB91A-2BC5-45AF-BF62-1446EEA333F8}' />
+    </worksheet>
+    <worksheet name='Total Compensation by Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lobbyist_Compensation_and_Expenses_by_Source_20240122' name='federated.0kkh4zx02s4rir15tut030tb8bfz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kkh4zx02s4rir15tut030tb8bfz'>
+            <column caption='Contributions' datatype='real' name='[contributions]' role='measure' type='quantitative' />
+            <column caption='Receipt Date' datatype='date' name='[receipt_date]' role='dimension' type='ordinal' />
+            <column-instance column='[contributions]' derivation='Sum' name='[sum:contributions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[receipt_date]' derivation='Year' name='[yr:receipt_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:receipt_date:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[yr:receipt_date:ok]' member='2014' />
+                <groupfilter function='member' level='[yr:receipt_date:ok]' member='2024' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='208' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:contributions:qk]</rows>
+        <cols>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</cols>
+      </table>
+      <simple-id uuid='{DDDF7D1B-36E0-48D7-AC1A-63D9EEFA6AC1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Compensation by Employer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employer_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D8186494-5600-42A7-BAAF-62CCB481A21A}' />
+    </window>
+    <window class='worksheet' name='Total Compensation by Contractor'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:contractor_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0700494B-EDF5-4F3A-A7BF-2ABEC6E92F03}' />
+    </window>
+    <window class='worksheet' name='Total Compensation by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{55FEA5C5-2EAD-4893-AF66-A6CB02CE61ED}' />
+    </window>
+    <window class='worksheet' name='Contributions by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{539BF03D-751D-4FA5-BE6D-FA57E637F75E}' />
+    </window>
+    <window class='worksheet' name='Political Ad Spend by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{16AAC2F3-7357-4CE7-B5CA-EFEE70422772}' />
+    </window>
+    <window class='worksheet' name='Advertising Spend by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7F2C06CE-B176-4D40-BF0D-FFA4D1599A1C}' />
+    </window>
+    <window class='worksheet' name='Direct vs. Subcontract'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[none:employment_type:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{F012E9D3-211C-43A5-BFFF-A4AFC900F1B0}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Contractor Expenses by Category by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kkh4zx02s4rir15tut030tb8bfz].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[:Measure Names]</field>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[sum:advertising:qk]</field>
+            <field>[federated.0kkh4zx02s4rir15tut030tb8bfz].[yr:receipt_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8F0C8B71-526D-4966-B662-79C902EFD01A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Advertising Spend by Year' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Contractor Expenses by Category by Year' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO2d2XMcR57fP3X0fd8HbhAED4gUKYniIY0kz8bOjLy73ohdR6ztB4f3wY59
+      8JMdfthXP/hP8Ysj7PDsEbsbntm5ZzTS6BhRJEDcd+Po+66uww8NggdAogGhmwA7PxEMsotZ
+      lb+url9W/vL7y0zJsiwLgaBPkV+1AQLBq0Q4gKCvEQ4gOBfsrCzy81/9moZ+sMeez+fb/7As
+      isUStdw6P/nZL8mWGwCUikXMF1xXEjGA4Dzw4Jc/Z6G0iy+Q5MHsCu9eHkQCfv3FHPfee4dG
+      PoOpOJhbXOfjexfIuSbZ/OZXzM4uEE4McHFigF/8/DP+7V/+R8JuZf+6wgEE54Ll+w8oyi0a
+      VQ3sHtRGASSZhuTC67KxNv+A2PAlGsU8U5MJPnm4RTpgY2Vjh+TgOA6lSbZicOfWO7jsTzo+
+      p+IAlmUhSdK3vYxAcEIsSqUSfn/g2GeeigMYhoGiKEcXFAjOGCIIFvQ1wgEEfY1wAEFfIxxA
+      0NcIBxD0NcIBBH1NRw5gGRqLS6tUilnu//73rKysUNdNFheXumyeQNBd1E4KSYodl0PF6w/j
+      D9WwSQabC4/YqVmMmCamaSIEZcF5pCMHsPQmGxsbON1uXC4fimRQqbUYSfmRZRnLsoQQJjiX
+      CCVY0NeIIFjQ1wgHEPQ1HcUAAkGvaTabPalHOIDgTPIn/+G/ER+a6Ho9wgEEZ5JoaoSB8atd
+      r0c4gOBMkl2fR+nBHKvOdADLIpfLEw4FWFlZJxjw4QkGKebzRMLhbtso6EP++sYFPrr2Ztfr
+      6ewNYOmUShWa5SwVTUEubFOqVFjZzHH3naBQggWnjgU9eaY6cwDTZGtrg0Q8hlHJUg0P0NzJ
+      kEpEhRIs6AoS9GSeeWe5QKqDO3fu7H260P5rNN0lkwSC3tG1IPh//q//S7ne6tbln+GtqQvc
+      evtmT+oSvF50zQG+mt+B4Gi3Lv8M/qV14QCCEyFSIQR9jXAAQV/TtS5QsrJJtFns1uWfwRka
+      7kk9gtePrjnAzYEUHw2Nduvyz/ATs9GTegSvH53NCbYsDMPAskyazebev9vHBILzTIdCmM70
+      zAIDAScrVROPWcITG2F2eob3770LHKbaWT1Th60e1iXoHWdHCZYVvB4nOF3oa4uYqSG2l2aJ
+      ppJYloVpHtx+oJfP44tsEJxfevX4dPwGAJBsTlIj40QjQfRYCFmWX5gKIUlSz5ZMlyVZpGK8
+      ZpytVAjFzsjICAABf/uYzWbrmlECQa8QOoCgrxEOIOhrhAMI+hrhAIK+RjiAoK8RDiDoazpe
+      Hn16Zg7LMvnd55+zOveAfLXJ51981W37BIKu0rEOEPR72FyaZbdQIhSOkpn7BsXVnhB/2KR4
+      y+rdRHnTNNF1vSd1CXrDmZoUb+lNsrkcAyPj3I2kUBSFqtuJ0+l8iRIs904JlmVUVSxx9Dpx
+      tpRg1cHU1NTeJxcAHo+nWzYJBD1DBMGCvkY4gKCvEQ4g6GuEAwj6GuEAgr5GOICgr+lYCV5Y
+      XKFWLvDwwTTrK0vUWgZzc/Pdtk8g6CodK8Fupw2X241Wr9PyOdmcnyGvKUIJFnSFM6cEb2Yy
+      GKaB3WnD4QxQ10xGIj6hBAu6wplTgm/ebC8+OzAw2D4YC3XNKIGgV4ggWNDXCAcQ9DXCAQR9
+      jXAAQV/TN0MnP/7Jz6jXe7OK9BtXLzMyIpZsPw/0jQP88OcPcMQmelKXpn8jHOCc0OFG2SY7
+      OznCQQ/La9uE/R684Qj53V3i8Vi3bTwVXPl1/I1qT+qSExd7Uo/g29PhRtkm9XodK+jDIRnk
+      ynnK1Spr20Wi0ci5UIK/N5rmo7HevAH+WdKEMv0tOVNKMKZBJrOB3qxSahrEIlHyOxnSyci5
+      UYJ7ulq1UKa/NWdOCb59+/YzxwbTia4YJBD0EjEMKuhrhAMI+hrhAIK+RkRqAgD+03/977gC
+      vRnS/jd/eJO7d+/0pK6jEA4gAKBlCxCK90a/qNXrPamnE0QXSPBSVKX9iMg9GkLuNeINIHgh
+      bqeNkUSA5a0iY8kgi5sFAMJ+F4VKg4jfhU1VyJfruJ02ao0WpmVhVxVM00I3TfLl3uRfnZSO
+      J8U/nJ6lWaswv7TCyuw35Cp1Pv3si27bJ3iFJEIe3A4bybCXaqNFLOgmFfUykgiQinjZLlSp
+      NjS8LjuJkIeA14nbYUOSwOdxEPQ6X/VXOJKOJ8WHAl4cbi9uRxnsQTJzD3D4wudmUrxl9W43
+      +fM4Sf+w+7OyVWRps4BNVXDYFBqaTsswyRZrVOoaLd1EkSUaTZ1CpUG1rmG2L8aFAQflmnbo
+      PTcN4+jfizOUCmHpTXL5PEgS+Xye1MAw8UEnDoddpEKc0J6zxmH3xzAt7KqMphtourF/vFBp
+      7p9TqbcAKFabz5w7u5bbL/M8sqIc/Xu94NzTpuNUiKtXrwKQTCb3jnq7ZVNf8J//+n8gOXuz
+      sMCffTjFv/jog2OfFwu6SYa9LG8VcTtUMrkqY6kgmVyFkUSAhmbgsCvMreVIRrw4bSp1TUdV
+      ZGRJolBpUKic7RjgfDVTrxHlXBGn39GTumq12onOK9c0hhMK1bqG095+VAqVBrpuUqw29/4/
+      gN2mgEW7i6Qb1JstLg9HMS1LOIDgcP7y8hAfXbzck7p+op6sL63IErVGC7/Hgddpg6AHl0NF
+      kWWK1Sa6blJraPjdDip1DbtNweWwUW+0+HR6A0U++0OnwgEEL6TaaPFweRfghcOZS5niC89/
+      Kmw4swghTNDXiDeAAICLpSUmd3ozdCtdvNmTejpBOIAAgHtjo3x0ZerIcqfBT85QWkXHSvD8
+      wjK1Up77Dx6xsbJAVTOYeTTbbfsEgq7SsRLscdnJlaqMRV0sVUxq8w8p63ahBJ/Ynt4onR3b
+      Q+/uj2EeTwneLhb4amGedy5OIktt4dXCYnl7m8mBQbKlEsValcFIFLfTQbZURtN1XA47AH6X
+      m1K9htveHnb2ulz79XSsBGe2tkjEYyzuVkmnE5QKFiNer1CCT2xPb5TOju2hd/dHkY+nBG8X
+      Crx39Q0+nZ2h2WphV1VURaHWbLJbLmFTFNwOB7+dnSHk9WJXbSiyzNzmOoZpslXIkwqFURUF
+      h83OvStX9+vpWAm+ceMGAKl0+1g4GDzBVxcIjs+VoWE+mXnIUCxOvdlkIBIFLBa3MozGkxim
+      SaVRx+t0oek66UiETD7H9dFx5jbXmRoewetykSuXDzi5CIIFZx5VUbh3ZQrDNFGf6mmEvL79
+      f8cCgWfOiQfaDXT8qYY66DmYviMcQHAumF5bZWVnm4FIlFQ4zMzaKrFAkFggwC8ffsPVwWEW
+      tjIkgiEM02Q8meRn97/mu9dv8OuZBwxFY+wUi9x7bqSrJ0KYZVlkyyUamvbCMi1d71kQJjh/
+      2FSVutZkKBqj3mzid7upNOqsbG9za2KSZqtF2OtjcmCQRDDIys4Oty9d5m9++xu28nlCXt+r
+      ewM0NI2vlxa5kEqzkc0SDwQo1mvMrq/x9sQk9WaTrUIel8PBRCqNZVn85P7vuTQwRNDjoa5p
+      VBt1Ir4AmUKOdycvv7ZT9ASHY5omumEwt7mOpuvohoHb4cDldPDZ3CNi/iBNvcV2IY/f7aFQ
+      rfLbR9O8d3WKxa0M02urOG32A9c91AFW5r9mdV3n1gc3OXjK8bFoR/Sz62sYpolhGvhcbgYj
+      MbYKeUZiCZa2twD4bG4WsBiMxKjU6+Qr7SGtRDDIViHH/aVFboxdwGk/DcsE54WL6QHGkkls
+      ypNHtmXoqLLC5cGhZ8rqhsFkemD/eDtoPpxDHcCyTFbX17nN6UjWLrudqeERnHY7lXqDsK8d
+      vFQbdeyqDafdxofXrlNtNHDZHeiGjiRJ7S8rseftTkzTZCgWx2GznYpdgvPD/vPwFM9/foz6
+      3JD8yzj0Ci53CJ97Hf25As1amY2dIkG3HU8kRm57m2Ty6DVCJUki6g9QqddJhp5MArE/FcV7
+      nS68Ttdhpz9DOhw5soxA0CkHHKBZLTEzPU22XDsQIRfyeQqba9SicbzVKhu7FeLxWEdK8PTa
+      Kl8tznPv8lUKtSoSErulIh9de5Mff/UFEb+f6bVVLg8O8c3yMn/xwYfcX16iWK1SqFa5MjTM
+      /eVF7l6+SjIUfqYuoQSfgj1nWAnuJgccQLHZiSfiFCoHCweCQbZ2S4R8fvLbWwwkwx0rwalw
+      mP/35eeoqkq2VMLrchH2+cgU8kyvr3HLfYnJ9CBTw6NIktyeWaRphH1+tooFlra3GEukqDYa
+      B8QMoQSfgj1nWAnuJgeskFUbLq8PqbV2oLDT4+f6m28AkE7Ej1WR2+7gD2+8hdvuYCI9gF1V
+      91omg7/6+I/bbxEsJElianiEtd0dxhJJFFkmHggS8vkoVCoHBI+TYFoWX8zPciGVfmZoTNN1
+      7KpKy9ApVqtEfP79H0HTdQzTxCWC79eKAw7QKBdYW9/CHfSfakV2m43LQ+19s4Leg+Oxivxs
+      h2s0kTxQJn5K6RfZUpGg10e2VOLzuVm8LhctXWdpe4vJgUEAStUaSDAci2FZ8OnsDFeHRrCw
+      MAyTfLVCxOdnu5DnB2/f6lnrKThdDjiAZZlIkkRqaPC1lYk9ThefzT3CbXdQazZJBEPYPSqa
+      rmNTVGKBALVGk2qzweJWBt0wSYUitAyduqahGwbjiSTlep217C4tw8B+zpZBEbQ58Kt5gjHu
+      3j0fG9+dFLfDwcdvv3vg+MW91h9ePnb8NDcv9GbfMUF36Otmq95ssrq7g28vPzwZCrORyxLx
+      +clXykQDAfKVCvFAkHylTGsvDgh4vBSrFRKhsFCkzzl97QBfLMxRqte4OT7Bg5VlEsEQC5lN
+      Pp2doaFpuB0OfC4PvksuPpmZ5mJ6gN1SiczsDPVmkxvjEwdUSMH5oq9XhRiMxljMZKhrGlMj
+      o1SbjX3Rzu1woMgKpmVS1zQSoRD3l5ewsAh6vAQ8HlS5r2/fa8Gx3gBavcLKxi4hnwtfNE52
+      a4tU6uBozXkh4vPz/bfeIR0KoygK69ldJlJpAh4P5VqdsM9HqVajXK9xIZliIpWm1mzic7kp
+      12v7OeeC88uxHKCYz1PO55AUP5XlKhu5GolE/NzOCXY7HIw9Ndw6FH0S/DsD7fH+kNdL6Klh
+      28fpGo/1gENXPxZK8Es500rwS5FAUSxku59KbpvBYyjB3UQowadgj1CCjyaWGiKW2gv60sdT
+      ggWCs4iI4gR9jXAAQV8jHEDQ1/S1ECY4nGypxGdzj3jrwgSW1Q6iTdNgPrPJGyOjZEslCtUq
+      qVCYgMeDput8s7LESDyBQ7Vht6nkK+1kwUK1QjocObPJgsIBBAfIV8q8dWGCB6sr7RRxRcVu
+      U6k3NT6dfYTLZgcJvl5exON00tJ1dMNkdWeHcr2GZVnIsswDfZlKo86f3/vOq/5KL0Q4gOAA
+      48kUn84+YjSeoFyvMRiNISGxvL3FYDSKJEmUajUqjfaO74/neqfCYXLlMm6Hg6DHQ6lWZ6dY
+      eMXf5uUcywEa9SrFUgWv14fL7aJRr+N2u7tlm+AVIcsyty9dxrKsZ1Zjuz42vl/m6VXZnuZp
+      ddzv9jAY7Syr9lVxLAdQFIVCLkeluIsrEGNhYZX37ryFZVmYpvlM2V4qi4fVf6DMmbPnidJp
+      WtbehJthfK4nDYqmt7CrNjS9RalWJ+r3P/N/hmHichy90Z55wvvz5cI8hWoFn8tNxOdjIBLl
+      Fw/ukwiG2C4WSIZClOt1bl28xFYhz2Y+R6Ve596VKf7591/y0bU3D0x0attjHuv+dJNjOYCq
+      qrh9AVQFttdWiCfPyLyBjuKrHgZhHQR8T5dYz+4yHIuzmcvxu9wsDpsN07JY2spwMT0AQK2p
+      YVkmg9EYumHw+fws10bHaWgasiyxUywQ9bfTt7938+0X1vView6Wctrt1HJNdksloD1Lz2Gz
+      Mb22itvpoFCtUtc0TMvik5lp7KrKaCLJyvYW02ur3Lp4Cf8hPYTD6nrZ/ekmx0yFkEmnkoBF
+      NBpDkuX9FAP5OU/vpbQuWQfrP1CG3qUeSHCkPfDEnpDXy68efoPL7qCuaaTCEVRZptlq4XG6
+      8DidbOaylOo1lrYzSEgkQ2F0w6C2l8F6eXCYfKXMZi57YBFZSTqePY/RDQMLi8n0AIZl8nB1
+      hZZhcGV4mI1sFr/bTcswmN/c4M7lK2wV8ixubTKRGuDelSlsqnroPT/seenEnm5wLAeQJJnH
+      9/X53B/ByfG53Hz/rVsHjk/stf7AM0l7LybF2xOTp2bXGyOjXB0eQZHlvUUL4OrwCABXh0b2
+      y+mGgaooJIIhro+Ov+BqZxMxCnSGKNdqbOSyOO12FFlhIBJhbXeHWCDITrFILBBgt1RkIBJl
+      q5DHabe3d0KxO8iWSwxFY4f2uU+KJEkoe63wy1rs46zEdtYQDnCG+GJhDt00uTYyxsz6KmGf
+      j19PP0RR2t2h66NjbBUKJIIhsuUy69kdsqUS709dI5PPYVOUjucyC9qIVIgzxEAkytzGOoVq
+      hTdGRinVasiyRDwQxGmzs1Ms4rI7aLQ0WrpOSzewqza+mJ9jp1g8dPlvwcsRb4AzRDIU5l++
+      8y6JYAgkiVqzyXev38TjdFJrNrGrKtVmg1y5zFgiyeTA4H7/u1yrYVPPb1fkVSEc4AzhcTrx
+      OJ37n59eCPjxithP///TuDvQAwQHEV0gQV9zvDnBuxk2cjWcVhVfapzZhw+5e/udbtkmEHSd
+      YzlAuVKhVS1AIElt/iG+cFRslH1ie8Sk+JfbcwZTIdKDw7QsG4lkBC3sxWaziUnxJ7ZHTIp/
+      uT1nUAmWVTtjY20F0O06ejcXgeCsI4JgQV8jHEDQ1wgHEPQ1wgEEfY1wAEFfIxxA0NccywHq
+      +R3uz8yzujRLuaHzzYOH3bJLIOgJx9IBWqYFegPd5SMz/4AGLqEEn9geoQS/3J4zqASrdhuq
+      rOL3B6hJEmGPRyjBJ7ZHKMEvt+cMKsFuX4jLV0IARILffsNqgeBV0zfzAR4u/5jm7t/0pC7z
+      5r/vST2Cb0/fOMCFpIv3B209qesTmxhcOy+IX0rQ1/TNG2C20sTYrvWmMndvRlME356+cYAL
+      l2Lce7M3XaDP1vvmtp57RBdI0NcczwEsi7W1NbKZDZqGxdraepfMEgh6w7He1bVynkw2Tzrs
+      prw0T6bYJJ1OCSX4eXsMoQS/jHOrBDe1FnqjiqHEaTRzDKXERtmH2qOcPyX4y7kfolX+qSf2
+      2D74L+dTCQ5FE9yJJtof0olu2CN4RVwd9PKdi4fv+nLa/PYMbZgngmBBXyMc4CkM02R2MYdp
+      tvvDjebL+6mC848YsH6Kh7NZPG4bf/ujOQI+B6VKk+tX4mztVImEXDjsCoMp/9EXOofcb7Yw
+      as2e1HX46qavBuEAT2GzKaxnKqTiXkzTIh71MLuQ53f3M9y+keaD20Ov2sSuceVSjPff7s3e
+      Ap9v9aSajhAO8BSTYyGGUj5cTpWmZmC3KUyOhbj3zgB2u4Isn53gTXA69L0DlMpN/L720uKS
+      JOF2tdMlnI7Ht0bC7RKhUq95tL6G19n91QeP5QC6VmcrVyboceHyeqlUKvh9vRk66wa/f7jN
+      wkqBa5djzC7l+f4HY3zy5SatlkGrZTKY8vHbrzb5d396lZ9+sooiS1RqGqoi09QMrkxEmBgN
+      veqv8VoS937FcLD7mQbHcgDTNNhZW6MedOGqBFlc3uTeuzcO3fS4p8qrZWIYxkvLHGbPUNrP
+      lw+20Q2TN6/EsSwLr9tGpWbh99qp1jQq1faf4bSP332dwe914HQoOOwKuUIdywoeqMs0O7CH
+      HirBHdwfOvi9HszuspYp47SrxKNuMjtV3n0zxeZ2lXjEjWGaBP1Hh7id3B+nXcHj7H4H5XiT
+      4rUWltkCe5Kd9XUSydj+nq/P7yK4ntvls6Z2qsa+iMZg8uh9Z1/QfR8Z8AMSG1sVSpUmum4y
+      mPKzuFLg6sUo4yMhMjtVbDaZD28PU6w08brtbO1WeePS4UGjLB28Hx2a0xWkDuzpZHPvRsPg
+      xpUEn9/PEA64KFc0/vZH8ximRSrm4b13Bjuz55Dn5Xm+arYw6t1/fo7lAC6vn6kbb6GqCgy2
+      9619LFc/L1uHXIuMhoqnZObLKap/dKRsftik71DAyYd3hg8tP5h80rUL+J5sP5SIeQBIJ16y
+      IV2HaQ6927jbOhV7rk5GmZ7P8tHdYVY3y0xNRpkYDTG/XODSeBi7vbM9yjpJc3jjapzv3OrM
+      ob4Nx1seXVY6/pJ2Ve7JKwxAPkPSeqfcX/oVrdJnvans3X994lObmoFj7zd3OVVuTrVTYCbH
+      wgB43BAOnt+l8rv2hC5UNVo7lW5d/hmM9BH92zPIxZTOe6O9cdxPTjiINT2fZWW9xMiAn4Df
+      SSLq5qe/WWVk0M/0XJapyRjlapOpyRif388QCjhZz1QYTPl4OJvlzltpQoGzJHsdpGsOMHIh
+      zL1rBwPEbvDpitghsRu0BwJapJM+8sUGjaZONl+nUtO4dT1FvaHv70y/nqmgtUw292KpdnBc
+      6aoDfPVgm8xuFbsqk0542diqcPtmmlJFwzBMElEPqvpy7+97HeBVMV1uYuz0JvXAFjzZaFNT
+      M1AUieW1IpVaC00zGEz7iARdfPNoh4tjYZbXSwBMjIYwTYvxkSB+n4OvHm5z962B0/waB9Ba
+      Btcuxfjymy2iYTelisb//odHREMuPG7by+O0PYQDvCImr8Z572ZvNJTfbZ5sA+2xoSAjAwFk
+      WdobRmZf93j891Daj2laB1Tyiz3QR6YmozxazPHR3WE2tipcvRjlwkiQ3VyddNLbUeD/Sh1g
+      N1fnqwdbTIyFCPqclKsag6nzK6y9jjx+sNsTil5epttYloXWMnDY24+t22XjxtV2UP7YIT1u
+      27GC8lfqAOtbZT64M8w//nQBmyqjaQYzC1k++WKTm1NxLk9EGBvqTRxxFpmZz7KyUcJmUwj6
+      HeQKDW5db/etk3EPrZZJJHR+R2COy4PZXTI7VZIxL4mom2jYzadfbRIOOllcLRIKOLEsi7fe
+      SPJPP1vkjUtRZhbyvH9rgH/+9Qo/+HD8wDWP5QD1SpGZ6TlsLpXYwDiPHjzk/XvvnvgLTYwE
+      +cVvV3n3zRQrGyVGBgLtfqcsMzLgP9WH/5Nfe5n7vDepzMN3T9bleJ5aQ+fNK3F+/3CHaMiN
+      3jL50S+XqNZaJKJu3n/39c1OPQy/18HcUoHB6z4qVY1ypcnn9zO8cz1FNOTC6VBZ3ypjWu0u
+      2f2ZXVRV5u9+PE+h2BY5nw+Kj/0GSAyPgK6xtTBNKB5/yfLoR0vrbpeNj+62hahYxL1/fCDp
+      3b9GJ3Qy6TsdG+BS7GAL0A0qinUqk/SvXozwYDbLe7cGWNkocXkiwsRYiLmlPBMjIRx2paN7
+      ZHYwCf2Lr2pU8qUjr3UahK8cbQ+HLBrQaOqoisTiSoGWblKrO/jzjy+xuVMlm6+Tcqq4HCrb
+      u1WcTpWxoQDzywU+ujNModRElg9e89i5QOVCjtTgCF6fD1VVXzIp/qDymivU+eVn67xzPYlp
+      WgzsDa/lCnUyO1UGkj5W1kvcvpkms1OhUm1ht8nYVIXNnQoXRkLEn3KUx5y5SfGydGJ7mpq+
+      38d12J8IT5fGI/tl3rmeOqY9Ry9HHrLdJeW4eqzrnhRdUY+05zA1fWI0xMRoCEmS9h9kSZKI
+      hp88E4+PpxPtWHJobwLTi+KCYzmAxx9m0h/e+3T8sfdqrYVhmISDTpbWSliWxdxSHptNxqbK
+      LK0WKZab1OotCqUmlmkxu5hjYjRENl9nbOj1XpJ9djHH3HKeybEwDrvCQNLHJ19scOVilN99
+      neHiaIiZhRzfeXeISk1jdiFHIuahWGqytVvl5lSCeNRzorqXNleoVWq8feUGqnL0Y7GytYZl
+      WpRqZd4Yv9KTxuXpOl5U33Ht6GkQbLcpVGotFleLzC8XcDnaE09yhToup4qFhdulsrZZxrIs
+      avUWgykf5apGOOikWNZIxnppcW/x+xzU6jqJmIedbA1JkkjEPGztVGk0dRpNfU/ckfjpb1bR
+      dYP55QKmZfEH742wk6ud2AHqzQaWD/7xNz/G5/ZiWiZaq4Xb2Q4sZVnZ7+rqhk4qmtx/2B4s
+      TmNTbazvbNLSW+RKecYHxlBkmYX1JRKRONu5HXweH5eGJxi8ePE0b9u3oqcOkIh5+POPL+Fy
+      qlwaD1Or6wwPHAxMq7UWHndv1vE8SzwWnlY3SuQKDXTdZGOrPUXT77VTqbao1lvMzOf44+9e
+      YHO7QjzadpZHi3neeuPkS9UkIwluT73N/NoiqqoS9AbIlfJYWORLBYYSA9hVOzuFXSRJIuAN
+      YBg62WKOeChGtVHDsiwmhycoVcsMxNJIEthtdpx2BxF/CIfNgcvRmTI8PZfF0YNl5ns+DOra
+      S5CTJOmFD3k/PvwAw2k/QynfM33ci3tJZ5Pj4f1yltXO7hwZbHcJhwf8hzYkxyHkCyBJEhND
+      TwYKgr69LudTgm7I/+zIXCrazgqOWhYjyaEDXZCw/6Ag1slaG3L5D5Dyb3Rm/Legb5TgjZ0M
+      rVKjJ3UNxk/+in9RevlhZXqBYRj89ItfMjV+ha3cFmF/iEx2m7C/HYyOpUf48tHXJCJxNnY2
+      GU4MouktBmLHC9SfR1FU7Gr3G8K+cYBrSo13bL2ZgTXD0dmpn36qkFnoze1Pv3Pyc1uGjm7o
+      FCtFdot5huKD+Dw+cqUCsiwxag1TqBRxOZyUqmVUVaVSr56e8V2ma7/A5595mf20N6mw6beP
+      /hqKLGFXTkegOopOWuiE/woT8ckeWAMN6eQ/s7w3XKsqKm6HEwuLeChKo9l+m2ay2wR9AaqN
+      Gi6Hk2wxx+rWOsOJwQND42eR4y2OW6uwmS1ia1XwpsZZnpvh+rXD+2mpaIqJ4OGzrU6bkkOs
+      4NYt7DY7H9y4h8PuYHxgdP94yBfEsiyarSap6LPB98RgbwTH0+BYDuBwe3EUy0tX/1cAAAY+
+      SURBVKC4ycx9g6H4vpUSfFqcdHn0ny0sEHC5eDOVYqtSwTBNbIqCz+FAAhx7Yk2+Xse0LHTT
+      IFercyUeZ61YZDBwuC7R2fLovbw/Ryuva0sPUcu5ntgzPv7RkfYsri/tzzXoJsfOBdrd3SU1
+      MIwvohB3u4+lBHeLkyrBtVYLWZb5++lpHKqKXVUoN5ok/T6KjQZRt4dfLS9xIRJhKpFkenub
+      itZkt1bFME3+fnqav3jzTYKuZ1XGzpZH7+X9OVoJftencDfcm5jkQQe/13u2Cnfsha7bcsxJ
+      8QGuXbu29+n8q7K3hoYIOJ18srLCwF5rLgVAMwzCLjflZpM3U2lCLhc+h53JWAwJ2KlWsSky
+      bpu9J63Uq+KfHj1iKBjkSjzOUi6H3+nEtCycqorLZtv/7quFAnGvl41SCUmC0VCY1UKBoeDJ
+      kxkVWcb2VKNqWRb/8GiGC+EIk7EYc7u7xLxedMN48tbea1DmdneZiEb5xeIit4eHMS2LYqNB
+      3HtwgkzfjAIdRtTTVk3fHxvrqLxvT8QZeEHX53Wj1tLYKBVZyudQJJmw28V6sUTU40GSIOh0
+      8fcz01xLJol6PExvbyNJEnO7WeyKwv+5f5+/unv31AYfalqLpXyehVwOWYKKprGYyxFxu3Go
+      Kj6Hgx8+eMCbqRRj4TBz2Swt06DR0pEliWpL48/euPbMNbvmAIX1GVbmvunW5Z/B8+GdE51X
+      1TR+NDfL7aFhaq0WY+Ew9zMZ7IpCudkk4HSyXanw1sAAVU1jtVjEY7ej6TpNwyDq8TD8LVq5
+      s877o2O47TY+W11jOBTCJssEnC5My8KhKNRaLW4PDRNxu1FlmWup9th/plzC53Dy1uDpTon8
+      cHwcp6ryu/U1RkNh7IqCU1WRJAmHolDXde6NjBDxuKm3Wvzp1FXytTprxSIpv5+KdnAKatcc
+      4KLPxa1gb14wX9tO1sI0dR3DNAk4neTrdQD8TiebpRJDwSA7lQplrclSPs9OtYpdUahoTQzT
+      YjIapXXUamsvIbv4e1Y25098/nGIDn7/ZOftvSE/GO9sVOfxoMDjvy/FTi9xS5KkfXs+HL+w
+      fzzlf1YBvxKPP/M55HIzHonwIvq6C6TIMi3TZLlQYC6bxamqFBrt8e0vN9a5HItTaNRRZZnE
+      Xh/XqapYksmXGxtMJZMnrnsq6OZOqDfrin4jnTxOMS2Lv3v4kBvpNCuFAoOBAPPZLAmfj1Kj
+      wZ3hYT5bWyPu9VJsNLgQiXA/k+HW0FBX1msyLYsfPnjAO4ODrOTzDAWDbFcreO0OTNPkcjzO
+      XHYXn8PJUi5HOhCg0Wox+QJnPJYDlHI7LK7tEPTIBNMXWJ6d4fr17udrdIuA08m/unIVp83G
+      pViMmqYxGg4/U2Y8EqHWauFS1RfexNcZ07LQDINio0FV0zBMk6jHw+VYjIfb20B7UMChqjgU
+      hent7f03q9wFIcwwTTRDJ1erUW42uZ/JEHa72alWeDyqbJoWAaeTbK1Gsdkg4X3xPPNjNQ2l
+      WpOJpI+K7CUzdx9DPf/zUZ22J/kmbrv90DJum62n+TdnCYm2ii5LEqosE3A6iXo8bFXKXIhE
+      WCsWcaoqhmnyaHcXl81GyzC+VffwSHuk9giRIstcjsepahp2RUGVZdZLJRZyORZzOeyqwoA/
+      QE178Rqjx3oDxMN+5tZ2GE7FqTgVEq7z7wCCl6PIMj+4dBmHonA1cTDdOuJxMxScAODmQDvo
+      PazcaaEqCn90+TJOm22/vz+299a2LIuGrvPx5csd23EsB7C7/VydbAcdvr19AR4rwc9z4cMP
+      cX6LvudxGInHnllu+3G68NNMfPe7OG2Ht/CnzXA6dbQ93/sezh5sAAEwPDR4pD0XP/4Y5yHj
+      5PDyPb1Oku01PDxytD1/8sc4A4ePsL2szuPeUck6BT3eNM2jl9/uIcKelyPsecKpOMDJsVhf
+      XkJyemmUc4SiCUqVOsmQh+WtApPjvUmme4yhN1mYWyQSj7O9kyWViKCZClolR81QuDjWW3t0
+      rc7CwjLRRJyd3QKJqB8DB83KLth9pBO92dTuMa1GlYXFVWLJOLu5ErGgG0v1UMlt4g7GiYZ6
+      u4Nms1ZmcXmdeCJGtlgl6JKpthTQayQGx3B1MKPs/wPOdbmX+I9PyQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Contributions by Year' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAMBklEQVR4nO3dW28baR0G8GdmbI/PZztOnabHZQWlu1u2u1tgVwIJrVgkvgM3fA7u4Zbr
+      FR8CIUBCgMRBrFZUbdM06cZJmqQ52U7i+BR7Tly4W7q103hiz4yd9/ndtK4P89fUj+zx+3gs
+      WZZlgUhQstcDEHmJASCh+bwegMgL5Y01LG3tMgAkpvLmFmrHFQaAxBRJZDCfikMax6dAlmVB
+      kqRxzEXkqpFfAUzThGEYDABNpaECYJkanq5s4HImglKlibhPQ2L2Bta/WsJ7796GZVlQFMXp
+      WYnGbqiPQSXZj0QsDFP2Qeq2YPij2Ft5BATCTs9H5KjhXgH0DiqVCqxsFv5ACJlUAu2ADzOh
+      kNPzETlqLAfBhmHwLRBNJa4Ek9AYABIaA0BCYwBIaAwACY0BIKENFQDL1LC2vgnLsrC2tor9
+      5xto6ybW1tYdHo/IWUMthEmyHyHVh8ZhGdVaE2o2ip3Vpyi3LFwxTZimCX6zkqbR0CvB2zs7
+      yOXzkE0N8EVhSDquzCYgyzK7QDS1uBJMQuNBMAmNASChMQAkNAaAhMYAkNAYABIaA0BCYwBI
+      aMN1gSwT1eoBuu0mVtc3UTs8gG5ZqFarTs9H5KjhzgtkmTiuNxCPBVGvVgCrheNGExs7B/h+
+      KsUuEE2sX//2c1Qa5qnXDxcA08De7jYCfhmm2YXlK+CgvIvZQpZdIJpo9a4MMzF/6vXDtUF9
+      Ku7duwcAKBbnev94eXb06Yg8xoNgEhoDQEJjAEhojv0+gK7raLfbTj38G4XDYR6U01AcC8Bf
+      //Z3fP6nRace/lTdkxZ+9cvP8M4777i+bZo+zv1CjCRhZv4txx7+NCfNuuvbpOnFYwASGgNA
+      Qhu6C1SpVGFoJ1hd28DRQRW6ZaFSYReIptvQXaBGo4l4LIKApaF6VEW92cTGziHS6cFdINMw
+      POkHWbBgGAZ0XXd92zR5LMt64/PQVhfI6LZQa+vIZbM43N/BpTd0gWRFgSQZIw1/HhIkKIoC
+      n4+/AEuAJElv/AHHobtAH73oAn3tcrEw2mREE4AHwSQ0BoCExgCQ0BgAEhoDQEJjAEhoDAAJ
+      jQEgoQ3ZBbKgadqLP3XoL/+uOT0fkaOG7ALp+GplDTeuXMLmXgW+7jGCmTl8tbyCj3/wweC+
+      xRkdDCed1f8gsYzeBYKCYEABFD9ky4Q/msX+sxJyszMvb2Ga3zz5kGdPfvSe/K/PQ2I662k4
+      5CuAATUYRKvVgqqqSGWyyGTSkGX5Zdno9TKc9OI6t0mQIMsyvxNMAABJwhjKcIofxWIRAJBK
+      pcYzGdEE4KdAJDQGgITGAJDQGAASGgNAQmMASGgMAAmNASChDbUQZpkalp6uYzYbw/pWGbGw
+      jNSlG1hdfoK7799xekYixwy3Eiz7kUpE0TjRcHUmjp2OD3ulxwhEeyfF4omxaFKN5cRYlt5B
+      9eAAhcIMyrUm5meSaEdVqKrKE2PRRBvbibFu3boFAMhksgCASCQyhvGIvMWDYBIaA0BCYwBI
+      aAwACY0BIKExACQ0BoCExgCQ0Gwtl5Z3trBXqSEYANKXrqO0vIQP7rILRNPLVgAi0Sg6a+vw
+      Fa9ht7QINZZmF4gm2nh+JO8FRVGQKl5DIZdCOxpEIMAuEE22sXSBvqaGY7h+JQYACIfDo01G
+      NAF4EExCYwBIaAwACY0BIKExACS0gQGolMv475dfwv0PMYncNTAAh/vb2N8/ApeS6KIbGIBW
+      q4VkOsX3R3ThDXyOx2NhbO+V8fr6Wf2ogsXFJWw+W0Wja2D56VcujEjknIErwZWDY6gwob92
+      g077BJ12C8FoGLulJ6jrAXaBaKLZ7gJZloZUMoWjEwn+167zqyqCIRWRSBxt08SVaJRdIAeV
+      Sqt4sLjs+nZNQ8fPP/sUqqq6vu1xO0cXSELtuIW434cugNAr1yTSOSTSud6FTHKsg1K/+wtL
+      +MeG+0dile0t/PiTxoUIwFkGfwy6v4NaV0PA7WmIXNYXAEny4c7dO2gdHqDrxURELhr4ClA/
+      qkIPhHDxXwBJdH0BaNWquP+4BL/WQceLiYhc1HcQHIpHcePyPOqaae/bMlPoj3/+C5on7r/R
+      KxZyuPfhXde3S/36nuOSpEKROoBy8b/x9ft/LcOXue76dmefLzMAE2LgOsBupY6AasIA+tYC
+      iC6SAQfBCtLJCDRJhtJ/JdGFMuBjUBmKz4dYpP8tUKN2gAf372NttYRGx8DS8lNXhiRyysDj
+      3GQqidJmta8MF42nkMo04Vcs7JYW0TDUqe4CndUTcYplmkPN19uvpy/jO8bChelT2e8CmTp0
+      w4JpmAMeTEM0noQCA13dwtUp7wKd1RNxiiTLQ80ny7In80HChelT2e4ClVcW4S+8hfxxq68N
+      KskBpJO9gkQiyS4QTb++Y4DczW/jsPQIvkQGQS8mInJR/zqA7Medux96MQuR6/itRxIaA0BC
+      YwBIaNP/ORd5ZmFhAb/53R/gC7hfnP/Fz97HJx9/PPLjMAB0bpqmIZy/DjUUdX3b3c54Wrx8
+      C0RCsxUAUzvBSmkd1f1ddE0L2zs7Ts1F5Apbb4G2tzbR1YFmW0fjWQvbBy0UZmbYBbLponSB
+      evPBk31oDLkPx/obYfFEArWtbWiRWXTqZcwV0uwCncNF6QL15oMnMypD7sOx/kZYPJ3HrXS+
+      d2Fuxs5diSYSD4JJaAwACY0BIKExACQ0BoCExgCQ0BgAEhoDQEKzFQCtdYwnyyWU93bQNS08
+      3952ai4iV9haCa4fHcGUJXQ6Leysr2L7sI3ZQoFdIJvYBRqdJ12gYCwOa38dZqyIVn0fl2fZ
+      BToPdoFG50kXKBxL4rvvvde7UMjZuSvRROJBMAmNASChMQAkNAaAhMYAkNAYABIaA0BCYwBI
+      aLYD0Gg00Go2YVoWGo2GEzMRucbWSrDeaeLBwhPM5yKQIxmsrW3hh/e+B8vq9W9eZQ3oB7nB
+      ggXTNPvmOe22nsw4YH8NvJ3pzXxArwt01oxedoHMYffhGfPZCkC1UoGutaH7Cjh+vomZV+oQ
+      svzNFxNPOizodYEkSeqb57TbekFC//4aeDtvxgPQm++sGWVZ9mgPYvj/4zMGtBWAmeIVZAtz
+      kCQJ1tyll4MMLBx5VDR7daZhb+u6Yeebhn3oURlOwvDbHVsZDkBf65NomvFTIBIaA0BCYwBI
+      aAwACY0BIKExACQ0BoCExgCQ0GwFoN04wpf/+QJLTx6iXGvgn//+wqm5iFxhayXY5w8gpPrh
+      j2SwV3qCZC4P0zR5YiybeGKs0XlyYixD1xFMZHApn4GWjMHn8/HEWOfAE2ONzpMTYwUjcdy4
+      FgcAhIJBO3clmkg8CCahMQAkNAaAhMYAkNAYABIaA0BCYwBIaAwACc1mF6iGxUcLWC09xfGJ
+      jkcLj52ai8gVtlaCAwEV0WQSimxhd2UBmhxlF+gc2AUanSddoOPaEdqtFrL5AgAZuXCYXaBz
+      YBdodJ50gVK5AlK5wosLcTt3JZpIPAgmoTEAJDQGgITGAJDQGAASGgNAQmMASGgMAAnNVgA6
+      rQbWN5/j+eoyam0NDx8tODUXkStsrQSr4SjUWh1QIthbeQxDibELdA7sAo3Oky5Qu1FDpVLB
+      bHEe0Qy7QOfFLtDoPOkChaIJ3L59+8WlhJ27Ek0kHgST0BgAEhoDQEJjAEhoDAAJjQEgodkK
+      wPFBGQ8ePsaz0lJvJfghV4JputkLQKuDm4U4GkoUuysLMHwhp+YicoWthbB8Oo6VzTLmL+XR
+      UBXMhBgAmm72zgsUjuM7b/fOBhGLxQDgZRfodVfn5/GTkPtVCF3rIJvNwjDO3vann9yBHEq7
+      MNU3xeSZvvksy+pbsn/75nUEc+7XDFrfSiIQCJy5D/P5PH76kQ+KP+DSZP83n1eG2oc/uvcu
+      NN/pZzCRrDE0mUzThCxP7vH014WoSZ5x0vehaZqedaeGdZ59OJYAjMNBeReHTQ1RvwXTF0a3
+      3UBxfg7rK6uYu3YDQb9y9oM4qFU/wuZOGdl0AsctHRG/hXA8hb3tDQRjORQLGU/nA0w8K60i
+      lEjhqFJGfnYWjVYHEb+Fg3oH16/Nw+un7vFBBbuHdaSiKk4MHyStjdzsDJ6traN49SYiqq03
+      JGPxP6hT0AvUE3ctAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Direct vs. Subcontract' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAKV0lEQVR4nO3dWW8b1x2G8Wc27iJFiookavEWx44dNAGSAEWaFG3zZfsZehEUaQskQZoW
+      BWK7TRwvtS3L2rhzyOHM6YVkFYmZgBQ0kqzz/q4sUiTPxTyihp6/jmOMMYhYyj3rBYicJQUg
+      VlMAYpGQv3z2Odv7naNb/DNcjcgpC3ny3x2qpTt8vt0kl80oALGJT6VSwBhYXV0nkzE4J/kp
+      kDEGx3FO6ulEUnei5wBJkpzk04mkTifBYjUFIFZTAGI1BSBWUwBiNQUgVlMAYrWp/ifYmBF3
+      v/2O5cYyW7stlubztEODa8asLld5sh1yaXUx1YV++dVXdLvdVF9DXk/GwB9+/ztcd/af59MF
+      MOrTjwwv9tqs5AM2BzElxzBo7fDdcIwfBCRJQpIkpDVe8Mc/fYNbvZrKc8vr7en9b/n4Nx/h
+      +7Nf2TPVIxIyzOVdsr7L42aP+nye7tBQb6yzu9dirpDDdV2MMXieN/MipuE4ji6zkIkcBzzP
+      Sy8AP1vgxs1bE++rLaT7q49ImnQSLFZTAGI1BSBWUwBiNQUgVlMAYjUFIFZTAGI1BSBWUwBi
+      NQUgVlMAYjUFIFab+vrROI5xHIcoGhMEHokBB3BdlyQxeJ5aktfPlBNhCf/869+oXd0gHEHO
+      iegPDYP2HteurPFwd8R7N68cfm96+21oLw/5Jcc5PqYKoLe3RW8UU0ocuttbOEuL5LKG+eUF
+      7j9tUq9VMMak+qcRzeE7jshPGcPRROKspgqgtLDCR7+tkTiG3VyRhXKeXmQo5TLUFmNczzuF
+      iTA0ESYTOc7Br+LHOfamPgfws1kAVpZyAGTyB7cHmZlfU+Tc0JmrWE0BiNUUgFhNAYjVFIBY
+      TQGI1RSAWE0BiNUUgFhNAYjVFIBYTQGI1RSAWG3KgRjD3b9/Q+VSg51ne1SrBXqhYRx2efPS
+      MvdfDHnn+nraaxU5cVMOxGzydGuHfnGOK7U5XhiHYs5gHJd7j/eZLxdS3yLJGKOJMJnImP+P
+      7M5qyoGYBh9/UiLxHZ5t7dOo5OgMDdVajcJgQDarLZLk7KS+RRJAvlwG4PqVOQAqh7cXS6WZ
+      X1TkvNBJsFhNAYjVFIBYTQGI1RSAWE0BiNUUgFhNAYjVFIBYTQGI1RSAWE0BiNUUgFhtqqtB
+      49GA7394QKVcZb8fUp/L0AkNxCM2Ggs83g65ur6U9lpFTtxUAbhBDp+Idi/EjCN6UUDgGobd
+      Fv95ZMjmMhqIkTOT+kBMFPYYk6GYz9JuDQkcwyCChZUNmq02pWJBAzFyZlIfiMnkS9y4+fbB
+      F2uNH91XrS3M/KIi54VOgsVqCkCspgDEagpArKYAxGoKQKymAMRqCkCspgDEagpArKYAxGoK
+      QKymAMRqUwVgkoRWq0WSxHR7fcbRiEE4ZDgcYkzCcDhKe50iqZhui6R4xNPH3xM5c2SdGCef
+      wYwT+s09NjYaPG2N+dVblzHGkCRJOis1aCBGJjKHx8Zxjr2p3gHixOAHAfE4wnMPHuI6DsvL
+      CzzcbFLJ+akfnDr0JQ0T3wFe1uR6Hg7g+QG1+irXqhW6vZBiziccQy7jU19KcFz3aCLMddM5
+      rXAcNBEmE708No5z7E0M4F9ff8EgzvD+r98nAFzPp14/mPyqlA+2RCplfukZRF4PE5MpzxXY
+      3NpBP2/lopsYwM5emwwx49Nejcgpe+UXGGMiavNVmqFLcBYrEjlFE94BHJrtPuXAQ5/uy0U3
+      IQBDa3+HbpKQefVOkQvllQAcJ2C+luPe13eIzmJFIqdo4oeYy2s3uPRmV59wyoU38VOgXmuH
+      ICgSn/ZqRE7ZxAD6vT6V2rwuFZULb+IxPlcuEvZDXX8jF97kd4B+k39/+4CUrusUOTcmBpDN
+      lLlyY510/tC5yPkxMQCDgxMPePxk6+BrY2ju7zOORuzs7hGNQnr9kHAwwJiYQTg81UWLnJSJ
+      n3SOhiHZ0jwbawfbHploSKu5zeOHz8hWy3Tb+wzHhv7+LmvrDTbbMe9c30h1IMZoIEZ+xokP
+      xAxHEYV87uhq0CQe0uwZGqt1Os83CZODF11arvPoeZNyzkv9Wn1dmSppmPgOEBDx56/+wbsf
+      vAeAGxRYbyxSKBR46/YtCrmAUQzZwKO+nOC67tEWRmkNxKCBGPkZJz4QQ1DgrUtrR58CuX5A
+      rVYDIJc7fODhpaIpbQkmcipeCaC7vcnG7fep1p7oUyC58F4JwCHm6y+/IB5GrFy5fPorEjlF
+      rwRQXFzj008a4Dg68ZQLb+I5gJPWiazIOaMjXaymAMRqCkCspgDEagpArKYAxGoKQKymAMRq
+      CkCsNtWf/klGA7774QHFUoVmu8fifJ7O0GDGIZdXF3n4IuT65ZW01ypy4qYKwAmyzJVK9EYR
+      a+U8m2OHkg/RYMC9R7sUC1mSJCFJktSmtowxmgiTiYyBOI6PNS8yVQDjfpPtZp/l+jzPWl0W
+      K3k6Q4eFxgZ+u0uxVDraIcZLaUDg5cCNyE85Dnieh+/P/rcMp3pEUKzx7jsHAzFLywe3LR7e
+      V5mvzvyiIueFToLFagpArKYAxGoKQKymAMRqCkCspgDEagpArKYAxGoKQKymAMRqCkCspgDE
+      alNdDWriiKdbeyyWszx4vs9yrUR3aPCIWapXeL4X0liqpb1WkRM33QXUrgcmptVsAdDqhTjG
+      0Nl/QX8QEjs+STKvgRg5E6kPxJhoyOazZ6ytrTLqbpPxSwwjqK+ssr3TYr6a10CMnJnUB2Lc
+      TJ4PP/wAgJWVH8/+Lr6hWWB5fekkWKymAMRqCkCspgDEagpArKYAxGoKQKymAMRqCkCspgDE
+      agpArKYAxGoKQKw2VQDGGDqdDiaO2N7ZYzTosd/u0u10MMmYTref9jpFUjHdBdTxiOfbexQC
+      iMKI3Y6Hnxh6+zu8sbLMbt9w69o6SZKktlBj0ECMTGQMJElCHMczP3a6gRgD7f1d3EqZfj8k
+      W8oyjAyLS4s822qysFDFcRxc18V10/mtSrMw8nMch2Mfe9PtEeYH3L59iyAIiJME33VJDLiu
+      w1LD/GhaK82pLU2EyS9JbSTScVxyuRzA0cijzp7lItBxLFZTAGI1BSBWUwBiNQUgVlMAYjUF
+      IFZTAGI1BSBWUwBiNQUgVlMAYjUFIFabaUeB9vZznrQGzOdcukNDPBpwbf0NfngRcvPqalpr
+      FEnNTAEkrosZDAizZfIZwziKuPt4j3IxR5Ik2iJJzkTqWyQdfbPv42UylLMe3RHUG5fIdnvk
+      CwVtkSRnJvUtkl4qVWrcrBzsBlk/vG2uXJn5RUXOC50Ei9UUgFhNAYjVFIBYTQGI1RSAWE0B
+      iNUUgFhNAYjVFIBYTQGI1Wa/egjYfPKIdmiIR33e3Fji/lbI29d0ObS8fo71DjDGo5D1KHgx
+      dx7tkvPT2xhDJE3HegcoZn06Q8PCyiWyvR75fOGk1yVyKo4VQG1xmdrhv+fKZYCjgZi0fPrR
+      ezi5amrPL6+vzuU8wLG2SHLMCY5ZJUmS2hZJImk40aNVB386hoMOd+/co9PrE46iV+4fjYZn
+      sKqL4X9QY4kfIMEpCgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Political Ad Spend by Year' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Compensation by Contractor' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Total Compensation by Employer' width='192'>
+      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
+      WN0qMBxN8cdjGuOIyEpx2GgTRArXsanVakv6O4BSdFoN6s0OhUKeVrtDNp2k1elRLaRpD8Yk
+      XIfd3V2cRJLrN2/jWCbDbodKMctMQavdp9VqHj9cGGG58OibBzjZMng9hpMQy01jBR7+9/uw
+      fD5Pp9Ukly/QbDafG6ndrLO6sUWnsc/QC5h5E45G4+eeeMMwyBcKNFst/MmQ4dQn9EbsNTuk
+      s2X8UY8gmLG73yDh/O53x+r6Bs364Q8fNw+e4mMT+h79oxGl1SrVUvXUpyyfzzAJLfqdLqNB
+      m9A7oj+aUcgXaLbaP8zXaDbptVtk8nmajTaFfJpmq8NatUij1QfT5tbNGzhGSKPTh3DKfr2D
+      bb38r+NcqUinM2Q0GuIftfj60TbtZp2+F5Kw4MvPPmN/75B8tUoqUyCaTcjl83TbTbK5Ap3m
+      IV/89j6ZXIHD3R0efvuEVv2AZqd/+sKGRac3Zq0AkTKp96a0G/sc7Ndx1IgJCTrtFvnvt/PK
+      xjXaB3tg2Iz6TWYhlKprVIo5Zt6QzuCIKDr+Iem06tSbbQbdFu3e0fkfAgHH3ZIv+V8Mw/jJ
+      /kfFce3h6Uue3JX/+ONnnz/t2z3r8y989feTLe6037aLrPty873c+j9lWZ2cZ83y+637/DZZ
+      5PlaTgCEuCLO/RzgdXNweMDekx0Kqxu4aoZys9y8th7vDAcHTGczEm6CVn2XQnWdve1vuX7z
+      BpFl0e/2STs2M8vhrVu3sM7pwParLz4jsFOsFNIEvo9vJcknHDAirESWfqeObTmUKhVMw8Ab
+      DxmOPVLZApV8gk//+7d88N5b9EYzDH9MplCm2+1y7domZkzlu2f5fz8M9/haxYmNAAAAAElF
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Total Compensation by Year' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
