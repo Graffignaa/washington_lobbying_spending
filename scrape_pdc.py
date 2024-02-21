@@ -1,3 +1,5 @@
+# Code for scraping additional data from the PDC website for bulk csv downloads
+
 import requests as rq
 import datetime
 import pandas as pd
