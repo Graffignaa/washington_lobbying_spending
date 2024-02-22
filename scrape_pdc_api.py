@@ -3,6 +3,8 @@ from sodapy import Socrata
 import requests as rq
 import datetime
 from bs4 import BeautifulSoup as soup 
+import psycopg2
+
 
 
 # Takes an existing dataset and determines if the new row exists in it already
@@ -28,12 +30,23 @@ client = Socrata("data.wa.gov", None)
 results = client.get("9nnw-c693", limit=2000, order="receipt_date DESC")
 
 
+
 # Convert to pandas DataFrame
 results_df = pd.DataFrame.from_records(results)
 
-# Load existing dataset - this will change
-expenses = pd.read_csv('expenses_cleaned.csv')
+connection = psycopg2.connect(database="pdc_data", user="postgres", password="password", host="localhost", port=5432)
+
+cursor = connection.cursor()
+
+cursor.execute("SELECT * from pdc limit 100;")
+
+# Fetch all rows from database
+record = cursor.fetchall()
+
+record_df = pd.DataFrame.from_records(record)
+
+print("Data from Database:- ", record_df.head)
 
 for index, row in results_df.iterrows():
-	if exists_in_dataset(row, expenses):
+	if exists_in_dataset(row, record_df):
 		add_to_dataset(row)
