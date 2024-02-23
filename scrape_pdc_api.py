@@ -5,11 +5,41 @@ import datetime
 from bs4 import BeautifulSoup as soup 
 import psycopg2
 
+def scrape_pdc(row, url):
+	page_soup = soup(rq.get(url).text, 'html.parser')
+	#print(url)
+	lobbying_activity = page_soup.find('div',id='l2_lobbying_activity')
+	#print(lobbying_activity)
+	out_row = row
+	out_row['legislation_subject_matter'] = ""
+	out_row['issue_bill_number'] = ""
+	out_row['committee_lobbied'] = ""
+	if(lobbying_activity):
+		lobbying_table = lobbying_activity.find('table')
+		#print(lobbying_table)
+		if(lobbying_table):
+			lobbying_df = pd.read_html(lobbying_table.prettify())[0]
+			#print(lobbying_df)
 
+			employer = row['employer_name']
+			#print(employer)
+
+			legislation_subject_matter = ""
+			issue_bill_number = ""
+			committee_lobbied = ""
+			for lobbying_index, lobbying_row in lobbying_df.iterrows():
+				if lobbying_row['Employer'] == employer:
+					legislation_subject_matter = lobbying_row['Subject Matter of Proposed Legislation']
+					issue_bill_number = clean_bills_list(lobbying_row['Issue or bill number'])
+					committee_lobbied = lobbying_row['Persons, Legislative committee or State Agency considering the matter']
+					break
+			out_row['legislation_subject_matter'] = legislation_subject_matter
+			out_row['issue_bill_number'] = issue_bill_number
+			out_row['committee_lobbied'] = committee_lobbied
+	return out_row
 
 # Takes a raw scrape of a list of bills/issues as a string and returns a clean list of bills separated by a comma and a space
 def clean_bills_list(bills_raw):
-	print(bills_raw)
 	bills_upper = str(bills_raw).upper()
 	remove_hb_sb_spaces = bills_upper.replace("HB ", "HB").replace("SB ", "SB")
 	delimit_with_spaces = remove_hb_sb_spaces.replace(",", " ").replace("/", " ").replace(":", " ").replace(";", " ").replace("-", " ").replace(", ", " ").replace(")", "").replace("(", "")
@@ -38,25 +68,15 @@ def exists_in_dataset(new, existing):
 
 # TODO: Add new item to dataset
 def add_to_dataset(new):
-	#print(f'ADDING {new} to dataset')
+	out_row = scrape_pdc(new, new['url']['url'])
+	print(out_row)
 	return 1
 
-# Unauthenticated client only works with public data sets. Note 'None'
-# in place of application token, and no username or password:
 client = Socrata("data.wa.gov", None)
-
-# Example authenticated client (needed for non-public datasets):
-# client = Socrata(data.wa.gov,
-#                  MyAppToken,
-#                  username="user@example.com",
-#                  password="AFakePassword")
 
 # Most recent 2000 results by receipt date, returned as JSON from API / converted to Python list of
 # dictionaries by sodapy.
 results = client.get("9nnw-c693", limit=2000, order="receipt_date DESC")
-
-
-
 # Convert to pandas DataFrame
 results_df = pd.DataFrame.from_records(results)
 
@@ -73,6 +93,7 @@ record = cursor.fetchall()
 record_df = pd.DataFrame.from_records(record)
 record_df.columns = colnames
 
-for index, row in results_df.iterrows():
-	if exists_in_dataset(row, record_df):
+
+for row in results:
+	if not exists_in_dataset(row, record_df):
 		add_to_dataset(row)

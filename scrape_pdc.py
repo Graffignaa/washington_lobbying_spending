@@ -30,18 +30,17 @@ def filter_hb_sb(x):
 		return True
 	return	False
 
-expenses = pd.read_csv('expenses_cleaned.csv')
-out = []
-i = 0
-csvs = 1
-for index, row in expenses.iterrows():
-
+def scrape_pdc(row):
 	url = row['url'][13:-1]
 
 	page_soup = soup(rq.get(url).text, 'html.parser')
 	#print(url)
 	lobbying_activity = page_soup.find('div',id='l2_lobbying_activity')
 	#print(lobbying_activity)
+	out_row = row
+	out_row['legislation_subject_matter'] = ""
+	out_row['issue_bill_number'] = ""
+	out_row['committee_lobbied'] = ""
 	if(lobbying_activity):
 		lobbying_table = lobbying_activity.find('table')
 		#print(lobbying_table)
@@ -58,18 +57,23 @@ for index, row in expenses.iterrows():
 			for lobbying_index, lobbying_row in lobbying_df.iterrows():
 				if lobbying_row['Employer'] == employer:
 					legislation_subject_matter = lobbying_row['Subject Matter of Proposed Legislation']
-					print(lobbying_row['Issue or bill number'])
 					issue_bill_number = clean_bills_list(lobbying_row['Issue or bill number'])
 					committee_lobbied = lobbying_row['Persons, Legislative committee or State Agency considering the matter']
 					break
-			# for item in page_soup:
-			# 	if item.id == "l2_lobbying_activity":
-			# 		print(item)
-			out_row = row
 			out_row['legislation_subject_matter'] = legislation_subject_matter
 			out_row['issue_bill_number'] = issue_bill_number
 			out_row['committee_lobbied'] = committee_lobbied
-			out.append(out_row)
+	return out_row
+
+expenses = pd.read_csv('expenses_cleaned.csv')
+out = []
+i = 0
+csvs = 1
+for index, row in expenses.iterrows():
+
+	out_row = scrape_pdc(row, row['url'][13:-1])
+	out.append(out_row)
+
 	i += 1
 	if i % 500 == 0:
 		print(f'Scraped {i} lines.')
@@ -79,4 +83,4 @@ for index, row in expenses.iterrows():
 		csvs += 1
 		out = []
 		i = 0
-pd.DataFrame(out).to_csv(f'scraped{csvs}.csv', index=True)	
+pd.DataFrame(out).to_csv(f'testscraped{csvs}.csv', index=True)	
