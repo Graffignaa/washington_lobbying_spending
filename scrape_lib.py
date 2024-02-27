@@ -1,7 +1,11 @@
 import pandas as pd
 import requests as rq
+import psycopg2
+from sodapy import Socrata
 from bs4 import BeautifulSoup as soup 
 
+# Takes a dataset row and the extracted URL and scrapes the relevant data (subject matter, issue/bill number, committee lobbied) from the given URL
+# Returns the Row with the additional fields added
 def scrape_pdc(row, url):
 	page_soup = soup(rq.get(url).text, 'html.parser')
 	#print(url)
@@ -45,6 +49,7 @@ def clean_bills_list(bills_raw):
 	filter_nonhb_sb = filter(filter_hb_sb, filter_nonnumbers)
 	return list(filter_nonhb_sb)
 
+# Find if a given string contains a number
 def filter_numbers(x):
 	numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 	for c in x:
@@ -52,6 +57,7 @@ def filter_numbers(x):
 			return True
 	return False
 
+# Find if a given string contains "HB" or "SB" 
 def filter_hb_sb(x):
 	if "HB" in x:
 		return True
@@ -64,7 +70,15 @@ def exists_in_dataset(new, existing):
 	return new['id'] in existing['id'].values
 
 # TODO: Add new item to dataset
-def add_to_dataset(new):
+def add_to_dataset(new, connection, cursor):
 	out_row = scrape_pdc(new, new['url']['url'])
-	print(out_row)
-	return 1
+	print(f'Adding to dataset: {out_row}')
+
+	sql = """INSERT INTO pdc(row) VALUES(%s) """
+	try:
+		cursor.execute(sql, (pd.DataFrame(out_row),))
+		connection.commit()
+	except (Exception, psycopg2.DatabaseError) as error:
+		return error
+
+	return "success"

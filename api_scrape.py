@@ -1,9 +1,7 @@
 import pandas as pd
+import psycopg2
 from sodapy import Socrata
 from scrape_lib import *
-import psycopg2
-
-
 
 client = Socrata("data.wa.gov", None)
 
@@ -26,7 +24,8 @@ record = cursor.fetchall()
 record_df = pd.DataFrame.from_records(record)
 record_df.columns = colnames
 
-
 for row in results:
+	print(type(row))
 	if not exists_in_dataset(row, record_df):
-		add_to_dataset(row)
+		print(add_to_dataset(row, connection, cursor))
+		break
