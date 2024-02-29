@@ -11,4 +11,5 @@
   Each row of data contains information from a single PDC lobbying expense report, including the funding source, the amount of funding provided, the contractor who was hired to lobby a governmental body, and a breakdown of what the funding was used on (Political Contributions, Ads, Personal Expenses, etc.).  Additionally, a link out to the original filing on the PDC website is included, where more information can be found.  Utilizing a web scraper written in python, additional information such as the bill or issue being lobbied for and the body being lobbied were extracted from these reports and added to the dataset.  
   
   The bill numbers were then cleaned and cross referenced with legislation data from LegiScan (https://legiscan.com/WA/datasets) in order to determine the status of each bill.  This allows for analysis of the impact of lobbying spend and activity on the passage of legislation, and can determine the "efficiency" of an organization's lobbying efforts.  
+  
 </div>
