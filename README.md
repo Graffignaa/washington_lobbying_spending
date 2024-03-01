@@ -1,7 +1,7 @@
 
 <div align="center">
   
-  ## Washington State Lobbying Spending
+  <h1>Washington State Lobbying Spending</h2> 
   ![Flag_of_Washington svg](https://github.com/Graffignaa/washington_lobbying_spending/assets/17256115/237bad7c-e54f-499b-bd89-1c66a419feca)
   
   Every year, over 3 billion dollars are spent in the United States to lobby the government in an effort to influence legislation. This project utilizes publicly available datasets from the Washington State Public Disclosures Commission and LegiScan to analyze trends in this spending over the past 10 years in Washington State.
